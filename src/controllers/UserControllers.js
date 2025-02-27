@@ -88,7 +88,7 @@ export const logoutUser = async (req, res) => {
     }
 
     let cookieOptions = {
-      expires: new Date(Date.now() + 1000 * 60 * 60 * 5), // 1 days
+      expires: new Date(Date.now() - 1000 * 60 * 60 * 5), // 1 days
       httpOnly: true,
     };
 
